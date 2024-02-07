@@ -15,6 +15,7 @@ import Host from './components/host';
 import HostVans from './components/HostVans';
 import HostIncome from './components/HostIncome';
 import HostReview from './components/HostReview';
+import HostDash from './components/HostDash';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -38,17 +39,12 @@ function App() {
 
 
 <Route path='/host' element={<Host/>}>
+    <Route path='/host' element={<HostDash/>} />
     <Route path='/host/review' element={<HostReview/>} />
     <Route path='/host/income' element={<HostIncome/>} />
     <Route path='/host/van' element={<HostVans/>} />
 </Route>
   </Route>
-
-
-
-
-
-
 
 </Routes>
 
