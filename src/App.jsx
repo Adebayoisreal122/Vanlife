@@ -39,7 +39,8 @@ function App() {
 
 
 <Route path='/host' element={<Host/>}>
-    <Route path='/host' element={<HostDash/>} />
+<Route path='/host' element={<Navigate to='/host/dashboard'/>} />
+    <Route path='/host/dashboard' element={<HostDash/>} />
     <Route path='/host/review' element={<HostReview/>} />
     <Route path='/host/income' element={<HostIncome/>} />
     <Route path='/host/van' element={<HostVans/>} />

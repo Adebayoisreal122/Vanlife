@@ -1,8 +1,12 @@
 import React from 'react'
 
 const HostDash = () => {
+
+
+
+  
   return (
-    <div>HostDash</div>
+    <div>welcome to my dashboard</div>
   )
 }
 
