@@ -16,7 +16,7 @@ Our team is full of vanlife enthusiasts who know firsthand the magic of touring 
         <div  className='aboudown container mx-auto my-4'>
             <p className='downtext mx-auto'>Your destination is waiting.
 Your van is ready.</p>
-    <button className='downbut mx-auto'>Explore our vans</button>
+    <button className='downbut '>Explore our vans</button>
         </div>
     </>
   )

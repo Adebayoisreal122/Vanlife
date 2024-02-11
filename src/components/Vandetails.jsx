@@ -29,24 +29,7 @@
 //       </div>
 //     </div>
 //     <div>
-//     <div className='container'>
-//   <div className='row'>
-//     {data.map((item, i) => (
-//       <div className='my-5 col-sm-6 col-md-5 border-none' key={i}>
-//         <div className="card">
-//           <img src={item.imageUrl} className="card-img-top" alt=""/>
-//           <div className="card-body d-flex">
-//             <h4 className="card-title">{item.name}</h4>
-//             <p className=" end card-text">$ {item.price}</p>
-//           </div>
-//           <Link key={item.id} to={`/vans/${item.id}`} className="btn btn-primary m-3 p-3 w-50">{item.type}</Link>
-// </div>
-//       </div>
-//     ))}
-//   </div>
-// </div>
 
-//     </div>
 
 // </>
 // )

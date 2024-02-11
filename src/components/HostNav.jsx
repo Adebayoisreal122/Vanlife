@@ -33,7 +33,7 @@ const HostNav = () => {
                 navLinks.map((data, i) => {
                     return (
                         <div key={i}>
-                            <NavLink  className={({isActive}) => (isActive? "text-info fw-bolder underline":"text-dark text-decoration-none")}  to={data.path}>{data.name}</NavLink>
+                            <NavLink  className={({isActive}) => (isActive? "text-warning fw-bolder underline":"text-dark text-decoration-none")}  to={data.path}>{data.name}</NavLink>
                         </div>
                     );
                 })
