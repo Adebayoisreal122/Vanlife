@@ -22,18 +22,20 @@ const VanDescript = () => {
         <Link to={"/vans"} className="col-sm-6 vanlink  col-md-2 p-2 text-center my-2 mx-4">Go back to all vans</Link>
 
         
-  <div className='container w-80'>
-    <h1>{data.name}</h1>
+  <div className='container-fluid p-4 d-flex gap-5 '>
     <div className="card">
       <img src={data.imageUrl} className="card-img-top" alt={data.name} />
       <div className="card-body">
         <h5 className="card-title">{data.name}</h5>
-        <p className="card-text">{data.description}</p>
       </div>
+    </div>
+    <div className=' p-5 justify-content-center'>
+        <p className="p-5 ">{data.description} 
+        <button className=' justify-content-center d-flex btn btn-outline-info'> rent your van</button>
+        </p>
     </div>
   </div>
 
-<h1>welcome to the</h1>
 
 <div>
     

@@ -8,8 +8,6 @@ import Home from './components/Home';
 import About from './components/About';
 import Vandetails from './components/Vandetails';
 import NotFound from './components/notFound';
-import { ToastContainer,} from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import VanDescript from './components/VanDescript';
 import Host from './components/host';
 import HostVans from './components/HostVans';
@@ -23,7 +21,7 @@ function App() {
   return (
 
     <>    
-    <ToastContainer/>
+   
    <Routes>
   <Route path="/" element={<Layout/>}>
     <Route path="/" element={<Home/>} />

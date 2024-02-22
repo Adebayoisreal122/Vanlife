@@ -102,7 +102,7 @@ const Vandetails = () => {
                     <h4 className="card-title">{item.name}</h4>
                     <p className="end card-text">$ {item.price}</p>
                   </div>
-                  <Link key={item.id} to={`/vans/${item.id}`} className="btn btn-primary m-3 p-3 w-50" onClick={() => handleItemClick(i)}>{item.type}</Link>
+                  <Link key={item.id} to={`/vans/${item.id}`} className="btn btn-primary m-3 p-3 w-50" style={{background: item.type === 'simple' ? 'orange' : item.type ==='luxury' ? 'black' : 'green'}} onClick={() => handleItemClick(i)}>{item.type}</Link>
                 </div>
               </div>
             ))}

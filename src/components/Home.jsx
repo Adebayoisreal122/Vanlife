@@ -28,7 +28,6 @@ const Home = () => {
       <h1>
         Vans for every occasion
       </h1>
-      <button onClick={signUp} className='btn btn-outline-info p-4'>signUp</button>
     </>
   )
 }
