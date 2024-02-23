@@ -62,7 +62,7 @@ const Vandetails = () => {
   const [filteredData, setFilteredData] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/vans')
+    axios.get('https://van-backend.onrender.com/api/vans')
       .then(res => {
         console.log(res.data);
         setData(res.data);

@@ -7,7 +7,7 @@ const HostDash = () => {
     const [data, setData] = useState([]);
   
     useEffect(() => {
-      axios.get('http://localhost:5000/api/host/vans')
+      axios.get('https://van-backend.onrender.com/api/host/vans')
         .then(res => {
           console.log(res.data);
           setData(res.data);
