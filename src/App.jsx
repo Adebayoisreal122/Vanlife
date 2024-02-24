@@ -28,12 +28,11 @@ function App() {
     <Route path="/" element={<Home/>} />
     <Route path="*" element={<NotFound/>} />
     <Route path="/signin" element={<Signin/>} />
-
-    <Route path="/home" element={<Navigate to="/" />} />
     <Route path="/about" element={<About/>} />
     <Route path="/vans" element={<Vandetails/>}>
     </Route>
       <Route path="/vans/:id" element={<VanDescript/>} />
+    <Route path="/home" element={<Navigate to="/signin" />} />
 
 
 
