@@ -14,6 +14,7 @@ import HostVans from './components/HostVans';
 import HostIncome from './components/HostIncome';
 import HostReview from './components/HostReview';
 import HostDash from './components/HostDash';
+import Signin from './components/Signin';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,6 +27,8 @@ function App() {
   <Route path="/" element={<Layout/>}>
     <Route path="/" element={<Home/>} />
     <Route path="*" element={<NotFound/>} />
+    <Route path="/signin" element={<Signin/>} />
+
     <Route path="/home" element={<Navigate to="/" />} />
     <Route path="/about" element={<About/>} />
     <Route path="/vans" element={<Vandetails/>}>

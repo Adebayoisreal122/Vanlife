@@ -7,7 +7,8 @@ const Navbar = () => {
   const navLinks = [
     {
       name: "Host",
-      path: "/host"
+      path: "/host",
+      icon: ""
     },
     {
       name: "About",
@@ -15,8 +16,15 @@ const Navbar = () => {
     },
     {
       name: "Vans",
-      path: "/vans"
+      path: "/vans",
+      icon: ""
     },
+    {
+      name: "signin",
+      path: "/signin",
+      icon: "/src/assets/images/user.svg"
+    },
+   
   ]
   return (
     <>
@@ -29,12 +37,15 @@ const Navbar = () => {
                 navLinks.map((data, i) => {
                     return (
                         <div key={i}>
-                            <NavLink  className={({isActive}) => (isActive? "text-info fw-bolder underline":"text-dark text-decoration-none")}  to={data.path}>{data.name}</NavLink>
+                            <NavLink  className={({isActive}) => (isActive? "text-info fw-bolder underline":"text-dark text-decoration-none")}  to={data.path}>
+                            {data.name === "signin" ? <img src={data.icon} alt={data.name} style={{height:24,   width:24}} />: data.name }
+                             </NavLink>
                         </div>
                     );
-                })
-            }
+                  })
+                }
                 </div>
+               
     </div>
   </div>
 </nav>  
