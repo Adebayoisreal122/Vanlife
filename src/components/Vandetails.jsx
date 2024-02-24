@@ -80,6 +80,8 @@ const Vandetails = () => {
 
   return (
     <>
+    <div className='rent'>
+
       <div className='explore'>
         <h1> <br /><br />Explore our van options</h1>
       </div>
@@ -92,11 +94,11 @@ const Vandetails = () => {
         </div>
       </div>
       <div>
-        <div className='container'>
-          <div className='row'>
+        <div className='container '>
+          <div className='row '>
             {(filteredData.length ? filteredData : data).map((item, i) => (
               <div className='my-5 col-sm-6 col-md-5 border-none' key={i}>
-                <div className="card">
+                <div className="card rent">
                   <img src={item.imageUrl} className="card-img-top" alt="" />
                   <div className="card-body d-flex">
                     <h4 className="card-title">{item.name}</h4>
@@ -109,6 +111,7 @@ const Vandetails = () => {
           </div>
         </div>
       </div>
+            </div>
     </>
   )
 }

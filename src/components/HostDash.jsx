@@ -1,6 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
+import { Link } from 'react-router-dom';
+
 
 const HostDash = () => {
 
@@ -35,7 +37,10 @@ const HostDash = () => {
     </div>
     <div className='listedv'>
     <p className='ms-4 bol'>Your listed vans</p>
-<span className='detail'>view all</span>
+<span className='details fw-bolder '>  
+<Link  to={`/host/van`} className=" text-dark  " >view all vans</Link>
+
+ </span>
 
 
 {data.map(van => (

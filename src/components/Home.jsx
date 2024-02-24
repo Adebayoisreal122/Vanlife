@@ -25,9 +25,7 @@ const Home = () => {
         </div>
         </div>
       </div>
-      <h1>
-        Vans for every occasion
-      </h1>
+    
     </>
   )
 }
